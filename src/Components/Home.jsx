@@ -1,14 +1,19 @@
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
+
 import Counter from "./Counter"
 import UsersList from "./UsersList"
-
+// ADD NAVIGATION COMPONENT WHICH WILL ACT AS A NAVBAR
 function Home() {
 
   return (
-    <>
-        <Counter/>
-        <UsersList/>
 
-    </>
+    
+    <BrowserRouter>
+      <Routes>
+      <Route path="/counter" element={<Counter/>}/>
+      <Route path="/users" element={<UsersList/>}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
