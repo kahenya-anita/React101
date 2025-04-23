@@ -34,7 +34,7 @@ function UsersList() {
         <h1>This is a list of Achievers in Tech</h1>
         <ul>
             {users.map((user) => (
-                <li key={user.id}>{user.name }, {user.email}, {user.gender}</li>
+                <li key={user.id}>{user.name }, {user.gender}</li>
             ))}
         </ul>
     </>
