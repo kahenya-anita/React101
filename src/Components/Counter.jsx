@@ -10,7 +10,7 @@ function Counter() {
 
   return (
     <div>
-        <h1>Learning State using Click Counter For class Practice</h1>
+        <h1>Learning State using Click Counter</h1>
         <p>You have clicked the button: {count} times</p>
         <button onClick={handleClick}>Click Me</button>
     </div>
